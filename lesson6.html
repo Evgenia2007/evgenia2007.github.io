@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row-reverse;
+            /* justify-content: space-evenly;
+            flex-wrap: wrap; */
+            align-items: center;
+        }
+        .item:nth-child(1) {
+            height: 100px;
+            order: 1;
+
+        }
+        .item:nth-child(2) {
+            height: 200px;
+            
+
+        }
+        .item:nth-child(3) {
+            height: 300px;
+            order: 3;
+
+        }
+
+        
+        p {
+            border: 2px solid rgb(155, 121, 121);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="item">
+            Однажды волк сказал. научись читать а потом читай.
+        </p>
+        <p class="item">
+            Не слушай тех кто много обещают, они обычно много обещают.
+        </p>
+        <p class="item">
+            Если ты не согласенЮ значит ты не согласен. Согласны?
+        </p>
+    </div>
+
+
+    
+</body>
+</html>
