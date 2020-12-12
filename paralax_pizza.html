@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bgimg-1{
+            background-image: url("img_parallax.jpg");
+            height: 100vh;
+            background-repeat: no-repeat;
+            opacity: 0.95;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .bgimg-2{
+            background-image: url("img_parallax2.jpg");
+            height: 100vh;
+            background-repeat: no-repeat;
+            opacity: 0.95;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        body{
+            margin: 0;
+        }
+        .border{
+            padding: 1.25em;
+            background-color: white;
+            font-size: 2em;
+            font-weight: 900;
+        }
+        div p{
+            padding: 1.75em 1em;
+            margin: 0;
+            background-color: black;
+            color: white;
+            font-weight: 600;
+            font-size: 1.25em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="bgimg-1">
+        <div class="caption">
+            <span class="border">Покрути вниз</span>
+        </div>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam perspiciatis cum ipsa nemo tempora, neque, iste, ex similique laudantium quod praesentium voluptate dolore repudiandae reprehenderit reiciendis animi. Et, quam eum!</p>
+    </div>
+    <div class="bgimg-2">
+        <div class="caption">
+            <span class="border">Это параллакс</span>
+        </div>
+    </div>
+</body>
+</html>
