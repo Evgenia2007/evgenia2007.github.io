@@ -1,0 +1,122 @@
+html, body {
+    margin: 0;
+    overflow-x: hidden;scroll-behavior: smooth;
+}
+.cotener{
+    display: flex;
+}
+.cotener-column{
+    display: flex;
+    flex-direction: column;
+}
+.vh100{
+    height: 100vh;
+}
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+.flex-around{
+    justify-content: space-around;
+    align-items: center;
+}
+.top-section{
+    background-image: url('img/background_top.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.top-section > h1{
+    white-space: nowrap;
+    padding: .5em;
+    font-size: 3em;
+    color: yellow;
+    font-family: sans-serif;
+}
+.top-section> .cotener{
+    width: 80%;
+    margin: 5%;
+}
+.top-section>.cotener>.item{
+    color:white;
+    padding: 1em;
+    margin: 1em;
+}
+.top-section>.BUTTON{
+    background-color: yellow;
+    padding: .5em 1.5em;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+.mid-section {
+    padding: 2em 1em;
+}
+.bottom-section{
+    background-image: url('img/background_bot.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-wrap: wrap;
+}
+.bottom-section>.planet{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: rgb(6, 6, 58);
+    height: 455px;
+    width: 455px;
+    border-radius: 50%;
+    margin: 0 1em;
+}
+.planet:nth-of-type(1){
+    background-image: url('img/mercury.png');
+}
+.planet:nth-of-type(2){
+    background-image: url('img/venus.png');
+}
+.planet:nth-of-type(3){
+    background-image: url('img/earth.png');
+}
+.planet:nth-of-type(4){
+    background-image: url('img/mars.png');
+}
+.planet:nth-of-type(5){
+    background-image: url('img/jupiter.png');
+}
+.planet:nth-of-type(6){
+    background-image: url('img/neptune.png');
+}
+.planet>h4{
+    text-align: center;
+    font-size: 2em;
+    color: yellow;
+    background-color: black;
+    padding: .25em;
+    border-radius: 10px;
+}
+@media(max-width:1500px){
+    .bottom-section{
+        height: auto;
+    }
+}
+@media(max-width:1200px){
+    .top-section > h1{
+        font-size: 2.5em;
+    }
+}
+@media(max-width:992px){
+    .top-section > h1{
+        font-size: 1.5em;
+    }
+}
+@media(max-width:768px){
+    .top-section > h1{
+        font-size: 1em;
+    }
+    .top-section > .cotener {
+        flex-flow: row wrap;
+    }
+}
