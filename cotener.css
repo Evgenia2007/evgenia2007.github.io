@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.grid-cotener{
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1.5fr 4fr 3fr 2fr;
+    grid-template-columns: 1fr 1.2fr 2fr;
+}
+main{
+    grid-row-start: 1;
+    grid-row-end:3 ;
+    grid-column-start:1;
+    grid-column-end: 3;
+    background-color: #1900ff;
+    position: relative;
+}
+.tasty{
+    grid-row-start:3; 
+    grid-row-end:4 ;
+    grid-column-start:1;
+    grid-column-end:2 ;
+    background-color:#fbff00 ;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.healthy{
+    grid-row-start: 3;
+    grid-row-end:4 ;
+    grid-column-start:2;
+    grid-column-end: 3;
+    background-color: #fbff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    grid-row-start: 4;
+    grid-row-end:5 ;
+    grid-column-start:1;
+    grid-column-end: 3;
+    background-color: #fbff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icecream{
+    background-image: url('img/ice.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: #ade2ce;
+    grid-row-start: 2;
+    grid-row-end:5 ;
+    grid-column-start:3;
+    grid-column-end: 4;
+}
+.nav{
+    grid-row-start: 4;
+    grid-row-end:4;
+    grid-column-start:1;
+    grid-column-end: 2;
+    background-color: #ffffff;
+}
+.logo span{
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 75px;
+    padding: 0 50px;
+    cursor: pointer;
+}
+.text,h5,span{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: #444444;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-25%);
+    font-size: 25px;
+    padding: 0 50px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.left, .right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.humburger > div {
+    width: 35px;
+    height: 5px;
+    background-color: #707070;
+    margin: 6px 0;
+}
