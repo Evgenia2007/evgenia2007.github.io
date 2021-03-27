@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let words = ['cotener', 'pizza', 'Minecraft'];
+        let template = [];
+        // console.log(template);  
+        let word = words[Math.floor(Math.random() * words.length)];
+        for (let i = 0; i < word.length; i++) {
+            template.push('_');
+        }
+        let remainLetters = word.length
+        alert('Привет я загадал слово состоящее из ' + remainLetters + 'букв, попробуй угадай!')
+        while (remainLetters > 0){
+            alert(template.join(''));
+            let guess = prompt('Введите букву: ')
+            if (guess === null) {
+                break
+            } else if (guess.length !==1) {
+                alert('Введите одну букву!')
+            } else {
+                for(const key in word) {
+                    if (word[key]=== guess){
+                        template[key] = guess;
+                        remainLetters--;
+                    }
+                }
+            }
+        }
+        alert(template.join(""));
+        alert("молодец это правильнный ответ" + word);
+    </script>
+
+</body>
+
+</html>
