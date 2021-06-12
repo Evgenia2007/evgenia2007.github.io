@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h1 {
+        font-size: 6em;
+    }
+    </style>
+</head>
+<body>
+    <h1>
+        <span>W</span>
+        <span>0</span>
+        <span>W</span>
+
+    </h1>
+    <script>
+        let characters = document.querySelectorAll('span');
+        let r = 25;
+        let b = 50;
+        let g = 75;
+        let interval = 125;
+        for (let i = 0; i < characters.length; i++) {
+            const el = characters[i];
+            setInterval(changeColor, interval, el);
+            interval += 15;
+        }
+        function changeColor(el) {
+            el.style.color = 'rgb('+ r + ',' + g + ','+ b + ')'
+            r += 5;
+            g += 10;
+            b=+ 15;
+            if (r > 255) {
+                r = 0;
+            } else if (g > 255) {
+                g= 100;
+            }else if (b >255) {
+                b = 75;
+            }
+        }
+    </script>
+</body>
+</html>
