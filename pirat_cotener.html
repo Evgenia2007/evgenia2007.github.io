@@ -100,6 +100,18 @@
         }
 
     }
+    let computerPosX = 25;
+    let computerWidth = pirate.clientWidth;
+    let computerMoveInterval = setInterval (computerMove, 250)
+    function computerMove() {
+        computerPosX += 25;
+        computer.style.left = computerPosX + 'px';
+        if (computerPosX >= computerWidth) {
+            computer.remove();
+            clearInterval(computerMoveInterval);
+            console.log('You lose!');
+        }
+    }
     </script>
 
 </body>

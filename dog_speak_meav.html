@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        let speak = function() {
+            console.log('My name is ' + this.name)
+        }
+        
+        let cat = {name: 'cotener', color: 'black', speak: speak}
+
+        let Animal = function(name, type) {
+           this.name = name;
+           this.type = type;
+
+           this.speak = function() {
+               console.log('Hello my name is ' + this.name + ' and i am ' + this.type)
+           }
+
+           this.walk = function() {
+               console.log('walking ' + this.name)
+           }
+
+        }
+        cotener = new Animal('cotener', 'cat');
+        rocket = new Animal('recket', 'dog');
+        cotener.speak()
+        cotener.walk()
+    </script>
+</body>
+</html>
